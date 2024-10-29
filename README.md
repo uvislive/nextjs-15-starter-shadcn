@@ -19,10 +19,13 @@ Welcome to the **Next.js 15 Starter (shadcn)** repository! This starter template
 ### Installation
 
 1. **Clone the Repository**:
-   Without examples
     ```bash
     git clone https://github.com/yourusername/nextjs-15-starter-shadcn.git
     cd nextjs-15-starter-shadcn
+    ```
+    To remove the example please switch the branch to without-example
+    ```bash
+    git checkout without-example
     ```
 
 2. **Install Dependencies**:
@@ -49,8 +52,8 @@ Welcome to the **Next.js 15 Starter (shadcn)** repository! This starter template
 To use Docker, make sure Docker is installed on your machine. Then, build and run the Docker container:
 
 ```bash
-docker build -t nextjs-starter .
-docker run -p 3000:3000 nextjs-starter
+docker build -t nextjs-starter-shadcn .
+docker run -p 3000:3000 nextjs-starter-shadcn
 ```
 
 ### ☁ Try it in the Cloud
