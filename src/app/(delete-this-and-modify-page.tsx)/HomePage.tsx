@@ -1,22 +1,27 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import ExtensionDetails from '@/app/(delete-this-and-modify-page.tsx)/ExtensionDetails';
+import NavigationBar from '@/app/(delete-this-and-modify-page.tsx)/NavigationBar';
 import SetupDetails from '@/app/(delete-this-and-modify-page.tsx)/SetupDetails';
-import ThemeSwitch from '@/app/(delete-this-and-modify-page.tsx)/ThemeSwitch';
 
 const HomePage: React.FC = () => {
     return (
         <main className='mx-auto flex h-screen max-w-3xl flex-col justify-center gap-6 px-3 pt-6 font-[family-name:var(--font-geist-sans)] sm:gap-12 sm:px-0 sm:pt-0'>
+            <NavigationBar />
             <div className='justify-centersm:items-start row-start-2 flex flex-col items-center gap-8'>
-                <Image
-                    className='dark:invert'
-                    src='https://nextjs.org/icons/next.svg'
-                    alt='Next.js logo'
-                    width={180}
-                    height={38}
-                    priority
-                />
+                <div className='flex items-center gap-4'>
+                    <Image
+                        className='dark:invert'
+                        src='https://nextjs.org/icons/next.svg'
+                        alt='Next.js logo'
+                        width={180}
+                        height={38}
+                        priority
+                    />
+                    <h6 className='text-3xl font-bold'>+</h6>
+                    {/* prettier-ignore */}
+                    <div className="mr-4 flex items-center space-x-2 lg:mr-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="size-8"><rect width="256" height="256" fill="none"></rect><line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></line><line x1="192" y1="40" x2="40" y2="192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></line></svg><span className="hidden font-bold lg:inline-block text-lg">shadcn/ui</span></div>
+                </div>
                 <ol className='list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left'>
                     <li className='mb-2'>
                         Get started by editing{' '}
@@ -47,18 +52,9 @@ const HomePage: React.FC = () => {
                         href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
                         target='_blank'
                         rel='noopener noreferrer'>
-                        Read our docs
+                        Read Next.js docs
                     </a>
                 </div>
-            </div>
-            <div className='fixed right-3 top-3 sm:right-6 sm:top-6'>
-                <ThemeSwitch />
-            </div>
-            <div className='fixed left-3 top-3 sm:left-6 sm:top-6'>
-                <Link href='https://github.com/SiddharthaMaity/nextjs-15-starter-core' target='_blank'>
-                    {/* prettier-ignore */}
-                    <svg xmlns="http://www.w3.org/2000/svg" className='size-9' viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg>
-                </Link>
             </div>
             <div className='row-start-3 hidden flex-wrap items-center justify-center gap-6 sm:flex'>
                 <a

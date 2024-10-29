@@ -26,6 +26,9 @@ const FEATURES: Feature[] = [
         // ! ======================================================
         name: 'ESLint 9'
     },
+    {
+        name: 'Shadcn UI'
+    },
     { name: 'Prettier 3' },
     { name: 'App Directory' },
     { name: 'System, Light & Dark Mode' },

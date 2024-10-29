@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 const RECOMMENDED_EXTENSIONS: string[] = [
+    'PulkitGangwar.nextjs-snippets',
     'formulahendry.auto-close-tag',
     'aaron-bond.better-comments',
     'mikestead.dotenv',
@@ -12,13 +13,14 @@ const RECOMMENDED_EXTENSIONS: string[] = [
     'sburg.vscode-javascript-booster',
     'christian-kohler.npm-intellisense',
     'esbenp.prettier-vscode',
-    'bradlc.vscode-tailwindcss',
     'Gruntfuggly.todo-tree',
     'ChakrounAnas.turbo-console-log',
     'codeandstuff.package-json-upgrade',
     'moalamri.inline-fold',
     'KnisterPeter.vscode-commitizen',
-    'yzhang.markdown-all-in-one'
+    'yzhang.markdown-all-in-one',
+    'bradlc.vscode-tailwindcss',
+    'austenc.tailwind-docs'
 ];
 
 interface ExtensionStatistics {
@@ -80,7 +82,7 @@ const ExtensionDetails: React.FC = async () => {
     const extensionDetails = await Promise.all(RECOMMENDED_EXTENSIONS.map(fetchExtensionDetails));
 
     return (
-        <div className='mx-auto grid max-w-2xl grid-cols-6 gap-y-3 sm:grid-cols-9 sm:gap-y-6'>
+        <div className='mx-auto grid max-w-2xl grid-cols-6 gap-y-3 sm:grid-cols-10 sm:gap-y-6'>
             {extensionDetails.map((extension) => {
                 return (
                     <div key={extension.name} className='group relative inline-flex justify-center'>

@@ -47,7 +47,17 @@ export default [
             'tailwindcss/no-custom-classname': 'off',
             'tailwindcss/migration-from-tailwind-2': 'off',
             'import/no-unresolved': 'off',
-            'import/no-named-as-default': 'off'
+            'import/no-named-as-default': 'off',
+            // ! TO COMPILE SHADCN EXAMPLES, PLEASE REMOVE AS NEEDED
+            '@typescript-eslint/no-explicit-any': 'off',
+            '@typescript-eslint/no-empty-object-type': 'off',
+            '@typescript-eslint/ban-ts-comment': 'off',
+            'react/no-unescaped-entities': 'off',
+            'react/no-unknown-property': 'off',
+            'tailwindcss/no-unnecessary-arbitrary-value': 'off',
+            'tailwindcss/classnames-order': 'off',
+            'import/named': 'off',
+            'import/no-named-as-default-member': 'off'
         }
     },
     // ! ===================== DISCLAIMER =====================
@@ -62,7 +72,9 @@ export default [
         rules: {
             ...nextPlugin.configs.recommended.rules,
             ...nextPlugin.configs['core-web-vitals'].rules,
-            '@next/next/no-img-element': 'off'
+            '@next/next/no-img-element': 'off',
+            // ! TO COMPILE SHADCN EXAMPLES, PLEASE REMOVE AS NEEDED
+            '@next/next/no-html-link-for-pages': 'off'
         }
     },
     {
