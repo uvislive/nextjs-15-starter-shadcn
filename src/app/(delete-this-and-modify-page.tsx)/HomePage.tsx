@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
                     />
                     <h6 className='text-3xl font-bold'>+</h6>
                     {/* prettier-ignore */}
-                    <div className="mr-4 flex items-center space-x-2 lg:mr-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="size-8"><rect width="256" height="256" fill="none"></rect><line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></line><line x1="192" y1="40" x2="40" y2="192" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></line></svg><span className="hidden font-bold lg:inline-block text-lg">shadcn/ui</span></div>
+                    <div className="mr-4 flex items-center space-x-2 lg:mr-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" className="size-8"><rect width="256" height="256" fill="none"></rect><line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" strokelinecapp="round" stroke-linejoin="round" stroke-width="32"></line><line x1="192" y1="40" x2="40" y2="192" fill="none" stroke="currentColor" strokelinecapp="round" stroke-linejoin="round" stroke-width="32"></line></svg><span className="hidden font-bold lg:inline-block text-lg">shadcn/ui</span></div>
                 </div>
                 <ol className='list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left'>
                     <li className='mb-2'>
