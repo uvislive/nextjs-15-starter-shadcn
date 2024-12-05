@@ -1,4 +1,3 @@
-import HomePage from '@/app/(delete-this-and-modify-page.tsx)/HomePage';
 
 /**
  * The main page component that renders the HomePage component.
@@ -6,7 +5,15 @@ import HomePage from '@/app/(delete-this-and-modify-page.tsx)/HomePage';
  * @returns {JSX.Element} The rendered HomePage component.
  */
 const Page = () => {
-    return <HomePage />;
+    return (
+        <>
+            <div className="w-full h-screen bg-background text-foreground ">
+                <div className="container mx-auto px-auto">
+                    Welcome To the my Application
+                </div>
+            </div>
+        </>
+    )
 };
 
 export default Page;

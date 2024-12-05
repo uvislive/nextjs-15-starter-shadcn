@@ -1,4 +1,6 @@
 import type { Config } from 'tailwindcss';
+import generateUtilities from './theme/generateUtilities';
+
 
 const config: Config = {
     darkMode: ['class'],
@@ -80,6 +82,18 @@ const config: Config = {
     		}
     	}
     },
-    plugins: [require('tailwindcss-animate')]
+    plugins: [require('tailwindcss-animate'),
+		function ({ addUtilities }:any) {
+			const newUtilities = generateUtilities();
+			addUtilities(newUtilities, ['responsive', 'hover']);
+			addUtilities({
+			  '.hide-scrollbar': {
+				'::-webkit-scrollbar': { display: 'none' },
+				'-ms-overflow-style': 'none',  /* IE and Edge */
+				'scrollbar-width': 'none',  /* Firefox */
+			  },
+			})
+		},
+	]
 };
 export default config;

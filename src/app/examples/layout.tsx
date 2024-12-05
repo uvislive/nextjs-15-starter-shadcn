@@ -41,7 +41,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
                 </PageActions>
             </PageHeader>
             <section>
-                <ExamplesNav />
+                {/* <ExamplesNav /> */}
                 <div className='overflow-hidden rounded-[0.5rem] border bg-background shadow'>{children}</div>
             </section>
         </div>
